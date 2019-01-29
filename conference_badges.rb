@@ -5,7 +5,10 @@ end
 
 
 
-guests = ["Edsger", "Ada", "Charles", "Alan", "Grace","Linus","Matz"]
-guests.each do |guest|
-  badge_maker(guest)
-end
+badge_maker("Edsger")
+badge_maker("Ada")
+badge_maker("Charles")
+badge_maker("Alan")
+badge_maker("Grace")
+badge_maker("Linus")
+badge_maker("Matz")
