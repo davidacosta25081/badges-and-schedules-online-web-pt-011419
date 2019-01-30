@@ -21,14 +21,13 @@ def batch_badge_creator (names)
 new_array
 end
 
-names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-batch_badge_creator (names)
-assign_rooms(names)
+
+
 
 def assign_rooms(names)
 new_names =[]
-  names.each_with_index {|val,index|
-  new_names << "Hello, #{val}! You'll be assigned to room #{index}!"
-}
+  names.each_with_index do |val,index|
+  new_names << "Hello, #{val}! You'll be assigned to room #{index + 1}!"
+end
 new_names
 end
