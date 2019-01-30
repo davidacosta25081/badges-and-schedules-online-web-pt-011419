@@ -2,13 +2,6 @@ def badge_maker(name)
 "Hello, my name is #{name}."
 end
 
-badge_maker("Edsger")
-badge_maker("Ada")
-badge_maker("Charles")
-badge_maker("Alan")
-badge_maker("Grace")
-badge_maker("Linus")
-badge_maker("Matz")
 
 
 
@@ -31,3 +24,12 @@ new_names =[]
 end
 new_names
 end
+
+def printer(attendees)
+  batch_badge_creator(attendees).each do |items| puts items end
+  assign_rooms(attendees).each do |items| puts items end
+end
+
+
+
+
